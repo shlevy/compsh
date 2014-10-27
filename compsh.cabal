@@ -17,10 +17,14 @@ cabal-version:       >=1.9.2
 
 executable compsh
   main-is:             Compsh.hs
-  build-depends:       base
+  build-depends:       base <5
   ghc-options:         -Wall
 
 test-suite test
   type: exitcode-stdio-1.0
   main-is: Test.hs
-  build-depends: base
+  build-depends: base <5
+
+source-repository head
+  type:     git
+  location: git://github.com/shlevy/compsh.git
