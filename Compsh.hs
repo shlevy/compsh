@@ -1,6 +1,6 @@
 module Main where
 
-import System.Exit (exitSuccess)
+import System ( ExitCode(ExitSuccess), exitWith )
 
 main :: IO ()
-main = exitSuccess
+main = exitWith ExitSuccess

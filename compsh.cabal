@@ -1,29 +1,29 @@
-name:                compsh
-version:             0.1.0.0
-synopsis:            The compiling shell
+name:          compsh
+version:       0.1.0.0
+synopsis:      The compiling shell
 description:
   A language designed to make traditional unix-style scripting easy,
   without any of the baggage required to support extensive interactive
   use or dynamic interpretation at runtime.
-homepage:            https://github.com/shlevy/compsh
-license:             MIT
-license-file:        LICENSE
-author:              Shea Levy
-maintainer:          shea@shealevy.com
-copyright:           Copyright (c) 2014 Shea Levy
-category:            Language
-build-type:          Simple
-cabal-version:       >=1.8
+homepage:      https://github.com/shlevy/compsh
+license:       MIT
+license-file:  LICENSE
+author:        Shea Levy
+maintainer:    shea@shealevy.com
+copyright:     Copyright (c) 2014 Shea Levy
+category:      Language
+build-type:    Simple
+cabal-version: >=1.8
 
 executable compsh
-  main-is:             Compsh.hs
-  build-depends:       base <5
-  ghc-options:         -Wall
+  main-is:       Compsh.hs
+  build-depends: haskell98
+  ghc-options:   -Wall
 
 test-suite test
-  type: exitcode-stdio-1.0
-  main-is: Test.hs
-  build-depends: base <5
+  type:          exitcode-stdio-1.0
+  main-is:       Test.hs
+  build-depends: haskell98, filepath
 
 source-repository head
   type:     git
